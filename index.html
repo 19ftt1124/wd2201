@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Index</title>
+
+<style type="text/css">
+	
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+video{
+	height: auto;
+	width: 100%;
+}
+
+img {
+	/*max-width: 100%;
+	height: auto;*/
+	 height: 48px;
+    padding: 2px 10px;
+}
+
+.container {
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/* Column system*/
+
+[class^=col-] {
+	width: 100%;
+	margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+	margin-top: 0;
+}
+
+.col-1 {
+	width: 33.333334%;
+	float: left;
+}
+
+
+@media (min-width: 40rem) {
+
+	[class^=col-] {
+		float: left;
+		padding: 0 .5em;
+		margin-top: 0;
+	}
+
+	[class^=col-]:first-child {
+		padding-left: 0;
+	}
+
+	[class^=col-]:last-child {
+		padding-right: 0;
+	}
+
+	.col-3 {
+		width: 50%;
+	}
+
+	.col-1 {
+		width: 16.6666%;
+	}
+}
+
+/* typography */
+
+h1 {
+	font-weight: 300;
+	font-size: 1.7rem;
+	margin-top: 0;
+	color: black;
+}
+
+p {
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+p:last-of-type {
+	margin-bottom: 0;
+}
+
+.title {
+	font-size: 2.5rem;
+	margin-bottom: 1.5em;
+	font-weight: 900;
+	margin-top: 1em;
+}
+
+.title span {
+	font-weight: 300;
+	display: block;
+	font-size: .9em;
+}
+
+.title-cta {
+	margin: 0 0 .5em;
+}
+
+.unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+@media (min-width:60rem) {
+
+	p {
+		font-size: 1.2rem;
+		line-height: 1.6;
+	}
+
+	.title {
+		font-size: 3.7rem;
+	}
+}
+
+/* buttons */
+
+.button {
+	display: inline-block;
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem) {
+	.button {
+		font-size: 1.5rem;
+	}
+}
+
+.button-small {
+	font-size: .7rem;
+	font-weight: 700;
+}
+
+.button-accent {
+	color: blue;
+	border-color: darkblue;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+	background: lightblue;
+	color: #232323;
+}
+
+.button-dark {
+	color: #232323;
+	border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+	background: #232323;
+	color: #00ff6c;
+}
+
+.parallax--bg,
+.parallax--box {
+	transition: initial;
+}
+
+
+
+/* header */
+
+header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 1em;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin: 1em;
+}
+
+nav a {
+	font-weight: 900;
+	text-decoration: none;
+	padding: .5em;
+	text-transform: uppercase;
+	color: black;
+	font-size: .8rem;
+}
+
+nav a:hover,
+nav a:focus {
+	color: #ddd;
+}
+
+@media (min-width:60rem) {
+	.logo {
+		float: left;
+	}
+
+	nav {
+		float: right;
+	}
+}
+
+
+/* hero-home*/
+
+.home-hero {
+	background-position: center;
+	padding: 10em 0;
+	color: #FFF;
+}
+
+@media (min-width: 60rem) {
+	.home-hero {
+		height: 100vh;
+		padding-top: 35vh;
+	}
+}
+
+.home-about-textbox {
+	background-color: #232323;
+	padding: 4em;
+	width: 100vw;
+	margin-left: -2.5%;
+	outline: 2px solid #00ff6c;
+	outline-offset: -2.5em;
+	color: #FFF;
+	position: relative;
+}
+
+.home-about-textbox h1 {
+	color: #00ff6c;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: .75em;
+	background: #232323;
+	padding: 0 .145em;
+}
+
+@media (min-width: 25rem) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	.home-about-textbox {
+		padding: 5.5em;
+	}
+
+	.home-about-textbox h1 {
+		top: .6em;
+		padding: 0 .325em;
+	}
+}
+
+@media (min-width: 60rem) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	/*.home-about {
+		background-image: url(images/cover.jpg);
+		background-repeat: no-repeat;
+		padding-bottom: 10em;
+	}*/
+
+	.home-about-textbox {
+		width: 50%;
+		padding: 7em;
+		outline-offset: -3.75em;
+		margin-left: -2.5%;
+		top: -5em;
+		text-align: left;
+		box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+	}
+
+	.home-about-textbox h1 {
+		top: .75em;
+		left: 6rem;
+		transform: translateX(0);
+	}
+
+
+}
+
+/* Footer*/
+
+footer {
+	background: #232323;
+	color: #fff;
+	text-align: left;
+	padding: 5em 0;
+}
+
+</style>
+</head>
+
+<body bgcolor="pink">
+
+<header>
+	<a href="http://www.pb.edu.bn/SitePages/home.aspx"><img src="images/logo.png" alt="logo" class="logo"></a>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+		</ul>
+	</nav>
+</header>
+
+	<br><br><br><br><br><br><br><br><br>
+		<cover><video autoplay loop><source src="video.mp4" type="video/mp4" class="video"></video></cover>
+
+<section class="home-hero parallax--bg">
+	<div class="container">
+		<h1 class="title parallax--box">Welcome To <br>Human Resource Department <span>of Politeknik Brunei</span>
+		</h1>
+		<a href="aboutus.html" class="button button-accent">About Us</a>
+	</div>
+</section>
+
+<div class="container">
+	<section class="home-about">
+
+		<div a href="aboutus" class="home-about-textbox parallax--box">
+			</a>
+			<h1>Who we are</h1>
+			<p>Involves in developing and administering programs that are designed to increase the effectiveness of an organization or business.</p>
+			<p><strong>Human Resource Department</strong> is important because we look after the <strong>needs</strong> of the students, lectures, and staffs of Politeknik Brunei. </p>
+		</div>
+
+	</section>
+</div>
+
+
+<footer>
+	<div class="container">
+		<div class="col-3">
+			<p>Politeknik Brunei Ministry of Education, Block 2E, Ong Sum Ping, Jalan Ong Sum Ping, Bandar Seri Begawan, BA1311, Brunei Darussalam.</p>
+		</div>
+
+
+		<div class="col-1">
+			<ul class="unstyled-list">
+				<li><strong>PURPOSE</strong></li>
+				<li>Assignment Purpose</li>
+				<li>Ass_02</li>
+				<li>PB HRD</li>
+			</ul>
+		</div>
+
+		<div class="col-1">
+			<ul class="unstyled-list">
+				<li><strong>BWEP</strong></li>
+				<li>WD2201_SICT</li>
+				<li>Muhammad Khalid bin Haji Zaini</li>
+			</ul>
+		</div>
+
+		<div class="col-1">
+			<ul class="unstyled-list">
+				<li><strong>19FTT1124</strong></li>
+				<li>DLIC05</li>
+				<li>Intake09</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
+WD2201_BWEP | AZIAWATI SAMAT | @APRIL 2020
